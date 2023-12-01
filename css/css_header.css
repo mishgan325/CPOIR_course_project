@@ -1,0 +1,333 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Стили для шапки и навигации */
+header {
+    font-family: 'Open Sans', 'sans-serif';
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.menu {
+    position: sticky;
+    top: 0;
+    z-index: 9;
+    display:flex;
+    background-color: #333;
+    height: 50px;
+    text-align: right;
+    font-family: 'Open Sans', 'sans-serif';
+}
+
+.profile {
+    position: absolute;
+    top: 12px;
+    right: 60px;
+    align-items: center;
+    z-index: 10;
+}
+
+.cart {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    align-items: center;
+    z-index: 9;
+}
+
+.cart img, .profile img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    margin: 0 auto;
+}
+
+header h1 {
+    margin-bottom: 0;
+}
+
+menu nav ul {
+    list-style: none;
+    position: relative;
+    left: 20px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.menu-icon {
+    max-height: 24px;
+    max-width: 24px;
+    cursor: pointer;
+    visibility: hidden;
+    display: none;
+    transition: 0.5s;
+}
+
+.submenu {
+    text-align: center;
+    position: relative;
+    z-index: 9;
+    left: 45%;
+    top: 50px;
+    width: 150px;
+    padding: 15px 0 15px;
+    margin-top: 5px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 0 30px rgba(0,0,0,.2);
+    box-sizing: border-box;
+    visibility: hidden;
+    opacity: 0;
+    transform: translate(-50%, 20px);
+    transition: .3s;
+    display: none;
+}
+.menu-wrapper ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+/* Медиа-запрос для адаптивности */
+@media (max-width: 768px) {
+
+    .submenu {
+        display: block;
+    }
+
+    .menu-wrapper:hover .submenu {
+        visibility: visible;
+        opacity: 1;
+        transform: translate(-50%, 0);
+    }
+    .submenu a {
+        font-family: 'Montserrat', sans-serif;
+        color: black;
+        font-size: 11px;
+        letter-spacing: 1px;
+        padding: 5px 10px;
+        transition: .3s linear;
+    }
+    .menu-wrapper {
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: block;
+        visibility: visible;
+    }
+    .menu-icon {
+        position: absolute;
+        display: block;
+        visibility: visible;
+        top: 12px;
+        right: 20px;
+    }
+    .menu nav, .cart, .profile{
+        visibility: hidden;
+    }
+
+    .menu-wrapper:hover .menu-icon{
+        transform: rotate(180deg);
+    }
+}
+
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s; /* Плавное изменение цвета текста */
+}
+
+a:hover {
+    color: #ff9900; /* Цвет при наведении */
+}
+
+a:active {
+    color: #ff6a00; /* Цвет при активации */
+}
+
+
+.cart-quantity {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    top: 15px;
+    right: -9px;
+    background-color: #ff5722;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    font-weight: bold;
+    display: flex; /* Add this line */
+    justify-content: center; /* Add this line */
+}
+
+/* Мини корзина */
+.mini-shopping-cart {
+    display: none;
+}
+
+.cart:hover .mini-shopping-cart {
+    display: flex;
+}
+
+.mini-shopping-cart h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.mini-shopping-cart * {
+    box-sizing: border-box;
+}
+
+.mini-shopping-cart {
+    width: auto;
+    height: auto;
+    margin-top: 40px;
+    flex-direction: column;
+    flex-basis: 25%;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.mini-shopping-cart .item {
+    padding: 20px 30px;
+    display: flex;
+    align-items: center;
+}
+
+.mini-shopping-cart .item:nth-child(3) {
+    border-top:  1px solid #E1E8EE;
+    border-bottom:  1px solid #E1E8EE;
+}
+
+.mini-shopping-cart .delete-button {
+    display: inline-block;
+    Cursor: pointer;
+    margin-right: 60px;
+}
+
+.mini-shopping-cart .delete-button img {
+    position: relative;
+    top: 0;
+    right: 0;
+}
+
+.mini-shopping-cart .image {
+    max-height: 100%;
+    margin-right: 50px;
+}
+
+.mini-shopping-cart .image img {
+    position: relative;
+    top: 0;
+    right: 0;
+    max-height: 80px;
+    width: auto;
+}
+
+.mini-shopping-cart .description {
+    text-align: left;
+    margin-right: 60px;
+    width: 115px;
+}
+
+.mini-shopping-cart .description span {
+    display: block;
+    font-size: 14px;
+    color: #43484D;
+    font-weight: 400;
+}
+
+.mini-shopping-cart .description span:first-child {
+    margin-bottom: 5px;
+}
+.mini-shopping-cart .description span:last-child {
+    font-weight: 300;
+    margin-top: 8px;
+    color: #86939E;
+}
+
+.mini-shopping-cart .quantity {
+    /*padding-top: 20px;*/
+    margin-right: 60px;
+}
+.mini-shopping-cart .quantity input {
+    -webkit-appearance: none;
+    border: none;
+    text-align: center;
+    width: 32px;
+    font-size: 16px;
+    color: #43484D;
+    font-weight: 300;
+}
+
+.mini-shopping-cart button[class*=button] {
+    width: 30px;
+    height: 30px;
+    background-color: #E1E8EE;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+}
+
+.mini-shopping-cart .minus-button {
+    position: relative;
+    top: -4px;
+    right: 0;
+}
+.mini-shopping-cart .minus-button img {
+    position: relative;
+    top: 0;
+    right: 0;
+}
+.mini-shopping-cart .plus-button img {
+    position: relative;
+    top: 0;
+    right: 0;
+}
+
+.mini-shopping-cart button:focus,
+input:focus {
+    outline:0;
+}
+
+.mini-shopping-cart .total-price {
+    width: 83px;
+    text-align: center;
+    font-size: 16px;
+    color: #43484D;
+    font-weight: 300;
+}

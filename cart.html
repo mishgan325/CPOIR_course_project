@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма заказа</title>
+    <link rel="icon" href="favicon.ico" sizes="any">
+
+    <link rel="stylesheet" href="css/css_footer.css">
+    <link rel="stylesheet" href="css/styles_cart.css">
+    <link rel="stylesheet" href="css/css_header.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,100&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+</head>
+<body>
+<header>
+    <a href="index.html">
+        <img src="images/LOGO_transparent.png" height="100px" width="auto">
+    </a>
+    <h1>Оформление заказа</h1>
+</header>
+<div class="menu">
+    <nav>
+        <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="catalog.html">Каталог</a></li>
+            <li><a href="constructor.html">Конструктор</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+    </nav>
+    <div class="profile">
+        <a href="login.html">
+            <img src="images/user_orange.png" height="23px" width="auto">
+        </a>
+    </div>
+    <div class="menu-wrapper">
+        <img src="images/menu_burger.png" class="menu-icon">
+        <ul class="submenu">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="catalog.html">Каталог</a></li>
+            <li><a href="constructor.html">Конструктор</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+            <li><a href="cart.html">Корзина</a></li>
+        </ul>
+    </div>
+    <div class="profile">
+        <a href="login.html">
+            <img src="images/user_orange.png" height="23px" width="auto" alt="">
+        </a>
+    </div>
+    <div class="cart">
+        <a href="cart.html">
+            <img src="images/cart_orange.png" height="25px" width="auto">
+            <div id="total-quantity" class="cart-quantity">0</div>
+        </a>
+    </div>
+</div>
+<main>
+    <div id="cart" class="shopping-cart">
+
+    </div>
+
+    <section class="contact-form">
+        <h2>Контактная информация</h2>
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Личные данные</legend>
+                <div class="form-field">
+                    <label for="name">Имя:</label>
+                    <input type="text" id="name" name="name" placeholder="Введите ваше имя" required>
+                </div>
+                <div class="form-field">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="example@example.com" required>
+                </div>
+                <div class="form-field">
+                    <label for="phone">Телефон:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Введите номер телефона" required>
+                </div>
+                <div class="form-field">
+                    <label for="password">Пароль:</label>
+                    <input type="password" id="password" name="password" minlength="6" placeholder="Минимум 6 символов" required>
+                </div>
+            </fieldset>
+
+            <div class="form-field">
+                <label for="comments">Комментарии к заказу:</label>
+                <textarea id="comments" name="comments" rows="4" cols="50" maxlength="200" minlength="10" placeholder="Введите комментарий (10-200 символов)" required></textarea>
+            </div>
+
+            <div class="confirmations">
+                <div class="form-field">
+                    <input type="checkbox" id="confirmation_personal_data" name="confirmation" required>
+                    <label for="confirmation_personal_data">Я согласен с обработкой персональных данных.</label>
+                </div>
+
+                <div class="form-field">
+                    <input type="checkbox" id="confirmation_subscribe" name="confirmation" required>
+                    <label for="confirmation_subscribe">Я хочу подписаться на рассылку и получать информацию о новых продуктах и акциях.</label>
+                </div>
+            </div>
+
+            <div class="form-field">
+                <label>Доставка:</label>
+                <input type="radio" id="radio-input1" name="radio" value="Самовывоз как можно скорее">
+                <label for="radio-input1">Самовывоз как можно скорее</label>
+                <input type="radio" id="radio-input2" name="radio" value="Самовывоз">
+                <label for="radio-input2">Самовывоз</label>
+            </div>
+            <div class="form-field">
+                <label for="datetime-input">Время доставки:</label>
+                <input type="datetime-local" id="datetime-input" name="datetime-local">
+            </div>
+            <div class="form-field">
+                <label for="file-input" class="custom-file-input">Добавьте свое фото</label>
+                <input type="file" id="file-input" name="file" class="file-input">
+            </div>
+
+            <div class="form-field">
+                <button type="submit">Оформить заказ</button>
+            </div>
+        </form>
+    </section>
+</main>
+<footer>
+    <div class="footer-columns">
+        <div class="column col-1">
+            <img src="images/LOGO_transparent.png" alt="logo.png" id="footer-logo">
+            <ul>
+                <li>
+                    <p class="tel-text"><i class="fas fa-phone-alt phone-icon"></i>бесплатный по России</p>
+                    <a class="tel-number" href="tel:88005553535">8(800)555-35-35</a>
+                </li>
+                <li><i class="far fa-envelope"></i><a href="mailto:test@test.test">shibut.m.v@edu.mirea.ru</a></li>
+                <li><i class="fas fa-map-marker-alt"></i>Проспект Вернадского, 78, Москва</li>
+            </ul>
+            <div class="social-icons">
+                <a class="github" href="#"><i class="fa-brands fa-github"></i></a>
+                <a class="telegram" href="#"><i class="fa-brands fa-telegram"></i></a>
+                <a class="codepen" href="#"><i class="fa-brands fa-codepen"></i></a>
+                <a class="vk"><i class='fa fa-vk'></i></a>
+            </div>
+        </div>
+        <div class="column col-2">
+            <h2>DNS RELOADED EXTENDED</h2>
+            <ul class="footer-links">
+                <li><a>О компании</a></li>
+                <li><a>Отзывы</a></li>
+                <li><a>Контакты</a></li>
+                <li><a>Салоны</a></li>
+                <li><a>Услуги</a></li>
+                <li><a>Портфолио</a></li>
+                <li><a>Новости</a></li>
+                <li><a>Обзоры и статьи</a></li>
+                <li><a>Форум</a></li>
+                <li><a>FAQ</a></li>
+
+            </ul>
+        </div>
+
+        <div class="column col-3">
+            <h2>НАВИГАЦИЯ</h2>
+            <ul class="footer-links">
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Каталог</a></li>
+                <li><a href="#">Конструктор</a></li>
+                <li><a href="#">Контакты</a></li>
+
+            </ul>
+        </div>
+
+        <div class="column col-4">
+            <h2>КАТАЛОГ</h2>
+            <ul class="footer-links">
+                <li><a href="#">Процессоры</a></li>
+                <li><a href="#">Видеокарты</a></li>
+                <li><a href="#">Материнские платы</a></li>
+                <li><a href="#">Оперативная память</a></li>
+                <li><a href="#">Жесткие диски</a></li>
+                <li><a href="#">Блоки питания</a></li>
+                <li><a href="#">Корпуса</a></li>
+                <li><a href="#">Охлаждение</a></li>
+                <li><a href="#">Аксессуары</a></li>
+                <li><a href="catalog.html">Готовые пк</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-line"></div>
+    <div class="copyright">
+        <p>&copy; 2023 Магазин компьютерных комплектующих. Все права защищены.</p>
+    </div>
+</footer>
+<script src="js/script_cart.js"></script>
+</body>
+</html>

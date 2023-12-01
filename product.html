@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Детали товара</title>
+    <link rel="stylesheet" href="css/css_header.css">
+    <link rel="stylesheet" href="css/css_footer.css">
+    <link rel="stylesheet" href="css/styles_product.css"
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,100&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+</head>
+<body>
+
+<header>
+    <a href="index.html">
+        <img src="images/LOGO_transparent.png" height="100px" width="auto">
+    </a>
+
+    <h1>Добро пожаловать в наш магазин компьютерных комплектующих</h1>
+</header>
+<div class="menu">
+    <div class="menu-wrapper">
+        <img src="images/menu_burger.png" class="menu-icon">
+        <ul class="submenu">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="catalog.html">Каталог</a></li>
+            <li><a href="constructor.html">Конструктор</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="catalog.html">Каталог</a></li>
+            <li><a href="constructor.html">Конструктор</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+    </nav>
+    <div class="profile">
+        <a href="login.html">
+            <img src="images/user_orange.png" height="23px" width="auto" alt="">
+        </a>
+    </div>
+    <div class="cart">
+        <a href="cart.html">
+            <img src="images/cart_orange.png" height="25px" width="auto">
+        </a>
+        <div id="total-quantity" class="cart-quantity">0</div>
+        <div class="mini-shopping-cart">
+            <h2>Корзина</h2>
+
+            <!-- Товар #1 -->
+            <div class="item">
+
+                <button class="delete-button">
+                    <img src="images/delete.svg" alt="" />
+                </button>
+
+                <div class="image">
+                    <img src="images/gpu/gpu1.png" alt="gpu1"/>
+                </div>
+
+                <div class="description">
+                    <span>Cупер Видюха</span>
+                    <span>РТХ 6969</span>
+                    <span>Цвета нет</span>
+                </div>
+
+                <div class="quantity">
+                    <button class="plus-button">
+                        <img src="images/plus.svg" alt="" />
+                    </button>
+                    <input type="text" name="name" value="1">
+                    <button class="minus-button">
+                        <img src="images/minus.svg" alt="" />
+                    </button>
+                </div>
+
+                <div class="total-price">$549</div>
+            </div>
+        </div>
+    </div>
+</div>
+<main>
+    <div id="productDetails"></div>
+    <h2>Страница в разработке</h2>
+    <div class="construction-icon">🚧</div>
+    <p>Мы работаем над улучшениями. Зайдите позже.</p>
+</main>
+<footer>
+    <div class="footer-columns">
+        <div class="column col-1">
+            <img src="images/LOGO_transparent.png" alt="logo.png" id="footer-logo">
+            <ul>
+                <li>
+                    <p class="tel-text"><i class="fas fa-phone-alt phone-icon"></i>бесплатный по России</p>
+                    <a class="tel-number" href="tel:88005553535">8(800)555-35-35</a>
+                </li>
+                <li><i class="far fa-envelope"></i><a href="mailto:test@test.test">shibut.m.v@edu.mirea.ru</a></li>
+                <li><i class="fas fa-map-marker-alt"></i>Проспект Вернадского, 78, Москва</li>
+            </ul>
+            <div class="social-icons">
+                <a class="github" href="#"><i class="fa-brands fa-github"></i></a>
+                <a class="telegram" href="#"><i class="fa-brands fa-telegram"></i></a>
+                <a class="codepen" href="#"><i class="fa-brands fa-codepen"></i></a>
+                <a class="vk"><i class='fa fa-vk'></i></a>
+            </div>
+        </div>
+        <div class="column col-2">
+            <h2>DNS RELOADED EXTENDED</h2>
+            <ul class="footer-links">
+                <li><a>О компании</a></li>
+                <li><a>Отзывы</a></li>
+                <li><a>Контакты</a></li>
+                <li><a>Салоны</a></li>
+                <li><a>Услуги</a></li>
+                <li><a>Портфолио</a></li>
+                <li><a>Новости</a></li>
+                <li><a>Обзоры и статьи</a></li>
+                <li><a>Форум</a></li>
+                <li><a>FAQ</a></li>
+
+            </ul>
+        </div>
+
+        <div class="column col-3">
+            <h2>НАВИГАЦИЯ</h2>
+            <ul class="footer-links">
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Каталог</a></li>
+                <li><a href="#">Конструктор</a></li>
+                <li><a href="#">Контакты</a></li>
+
+            </ul>
+        </div>
+
+        <div class="column col-4">
+            <h2>КАТАЛОГ</h2>
+            <ul class="footer-links">
+                <li><a href="#">Процессоры</a></li>
+                <li><a href="#">Видеокарты</a></li>
+                <li><a href="#">Материнские платы</a></li>
+                <li><a href="#">Оперативная память</a></li>
+                <li><a href="#">Жесткие диски</a></li>
+                <li><a href="#">Блоки питания</a></li>
+                <li><a href="#">Корпуса</a></li>
+                <li><a href="#">Охлаждение</a></li>
+                <li><a href="#">Аксессуары</a></li>
+                <li><a href="catalog.html">Готовые пк</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-line"></div>
+    <div class="copyright">
+        <p>&copy; 2023 Магазин компьютерных комплектующих. Все права защищены.</p>
+    </div>
+</footer>
+<script>
+
+    // const products = [
+    //     { code: 'A1', name: "ПК Мастер", likes: 0, img_src: "images/pc/pc1.png", svg_class: "heart-icon", description: "Мощный компьютер для профессиональных задач и игр", price: 2999.99, specs: ['Процессор: Intel Core i9-11900K', 'Графика: NVIDIA GeForce RTX 3080', 'Оперативная память: 32 ГБ DDR4', 'Накопитель: 1 ТБ SSD + 2 ТБ HDD'] },
+    //     { code: 'A2', name: "Геймерская Фурия", likes: 5, img_src: "images/pc/pc2.png", svg_class: "heart-icon isLiked", description: "Супербыстрый ПК для гейминга и стриминга", price: 3499.99, specs: ['Процессор: AMD Ryzen 9 5900X', 'Графика: NVIDIA GeForce RTX 3070', 'Оперативная память: 64 ГБ DDR4', 'Накопитель: 1 ТБ NVMe SSD'] },
+    //     { code: 'A3', name: "Творческая Ракета", likes: 3, img_src: "images/pc/pc3.png", svg_class: "heart-icon", description: "Идеальный ПК для видеомонтажа и 3D-графики", price: 4999.99, specs: ['Процессор: Intel Core i7-12700K', 'Графика: NVIDIA Quadro RTX 5000', 'Оперативная память: 128 ГБ DDR4', 'Накопитель: 2 ТБ NVMe SSD'] },
+    //     { code: 'A4', name: "Бизнес Бриллиант", likes: 2, img_src: "images/pc/pc4.png", svg_class: "heart-icon", description: "Идеальный ПК для видеомонтажа и 3D-графики", price: 1499.99, specs: ['Процессор: Intel Core i5-11600', 'Графика: Integrated Intel UHD Graphics 750', 'Оперативная память: 16 ГБ DDR4', 'Накопитель: 512 ГБ SSD'] },
+    //     { code: 'A5', name: "Мультемедийный Магнат", likes: 1, img_src: "images/pc/pc5.png", svg_class: "heart-icon", description: "Идеальный выбор для потокового видео и мультимедийного контент", price: 1899.99, specs: ['Процессор: AMD Ryzen 7 5800X', 'Графика: NVIDIA GeForce RTX 3060', 'Оперативная память: 32 ГБ DDR4', 'Накопитель: 1 ТБ NVMe SSD'] },
+    //     { code: 'A6', name: "Школьный гений", likes: 12, img_src: "images/pc/pc6.png", svg_class: "heart-icon isLiked", description: "Образовательный компьютер для дистанционного обучения и исследований", price: 8000.69, specs: ['Процессор: Intel Core i9-12900K (16 ядер, 32 потока)', 'Графика: NVIDIA GeForce RTX 4080 Ti', 'Оперативная память: 128 ГБ DDR5', 'Накопитель: 2 ТБ NVMe SSD + 16 ТБ HDD'] },
+    //     { code: 'A7', name: "Домашний центр", likes: 9, img_src: "images/pc/pc7.png", svg_class: "heart-icon", description: "Многофункциональный ПК для развлечений и работы из дома", price: 1499.69, specs: ['Процессор: AMD Ryzen 5 5600X', 'Графика: NVIDIA GeForce GTX 1660 Super', 'Оперативная память: 16 ГБ DDR4', 'Накопитель: 512 ГБ NVMe SSD'] }
+    // ];
+    //
+    // // Получить параметр из URL
+    // const urlParams = new URLSearchParams(window.location.search);
+    // const productNumber = urlParams.get('product');
+    //
+    // // Определить информацию о товаре в зависимости от номера товара
+    // let productDetails = "";
+    // if (productNumber === 'A1') {
+    //     productDetails = "Описание 1 товара...";
+    // } else if (productNumber === 'A2') {
+    //     productDetails = "Описание 2 товара...";
+    // } else if (productNumber === 'A3') {
+    //     productDetails = "Описание 3 товара...";
+    // }
+    //
+    // // Вставить информацию о товаре на страницу
+    // document.getElementById("productDetails").innerHTML = productDetails;
+</script>
+
+</body>
+</html>

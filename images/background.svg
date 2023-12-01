@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1255 848">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g>
+    <rect class="cls-1" x=".5" y=".5" width="1254" height="847"/>
+    <path d="m1254,1v846H1V1h1253m1-1H0v848h1255V0h0Z"/>
+  </g>
+  <g>
+    <rect class="cls-1" x="19.5" y="597.5" width="326" height="237"/>
+    <path d="m345,598v236H20v-236h325m1-1H19v238h327v-238h0Z"/>
+  </g>
+  <g>
+    <rect class="cls-1" x="365.5" y="84.5" width="688" height="527"/>
+    <path d="m1053,85v526H366V85h687m1-1H365v528h689V84h0Z"/>
+  </g>
+  <g>
+    <rect class="cls-1" x="1143.5" y="53.5" width="90" height="766"/>
+    <path d="m1233,54v765h-89V54h89m1-1h-91v767h91V53h0Z"/>
+  </g>
+  <g>
+    <rect class="cls-1" x="389.5" y="424.5" width="519" height="150"/>
+    <path d="m908,425v149H390v-149h518m1-1H389v151h520v-151h0Z"/>
+  </g>
+  <g>
+    <rect class="cls-1" x="446.5" y="188.5" width="150" height="150"/>
+    <path d="m596,189v149h-149v-149h149m1-1h-151v151h151v-151h0Z"/>
+  </g>
+  <g>
+    <rect class="cls-1" x="869.5" y="188.5" width="148" height="30"/>
+    <path d="m1017,189v29h-147v-29h147m1-1h-149v31h149v-31h0Z"/>
+  </g>
+  <g>
+    <rect class="cls-1" x="869.5" y="233.5" width="148" height="30"/>
+    <path d="m1017,234v29h-147v-29h147m1-1h-149v31h149v-31h0Z"/>
+  </g>
+  <g>
+    <rect class="cls-1" x="869.5" y="278.5" width="148" height="30"/>
+    <path d="m1017,279v29h-147v-29h147m1-1h-149v31h149v-31h0Z"/>
+  </g>
+</svg>

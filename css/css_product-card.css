@@ -1,0 +1,319 @@
+.container {
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+
+
+@media (max-width: 900px) {
+
+}
+/*карточки товаров*/
+
+.product-wrapper {
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.product {
+    width: 48%;
+    max-width: 400px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .product {
+        width: 100%;
+    }
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+}
+
+.product h2 {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.product p {
+    font-size: var(--text-size);
+    line-height: 1.5;
+    margin-top: 0;
+}
+
+.product .price {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+
+/*Красивое описание пк при наведении на картинку*/
+.image-container{
+    padding: 1em 0;
+    float: left;
+    width: 50%;
+}
+
+.image-container .title{
+    color: #1a1a1a;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.content {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.content .content-overlay {
+    background: rgba(0,0,0,0.7);
+    position: absolute;
+    height: 99%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    -moz-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s;
+}
+
+.content:hover .content-overlay{
+    opacity: 1;
+}
+
+.content-image{
+    width: 100%;
+}
+
+.content-details {
+    position: absolute;
+    text-align: center;
+    padding-left: 1em;
+    padding-right: 1em;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.content:hover .content-details{
+    top: 50%;
+    left: 50%;
+    opacity: 1;
+}
+
+.content-details h3{
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    margin-bottom: 0.5em;
+    text-transform: uppercase;
+    font-size: var(--text-size);
+}
+
+.content-details p{
+    color: #fff;
+    font-size: 0.8em;
+}
+
+.fadeIn-bottom{
+    top: 80%;
+}
+
+h2 a{
+    color: black;
+}
+
+
+
+/* like button */
+
+.like {
+    position: relative;
+    top: 12px;
+    left: 5px;
+    display: flex;
+    border-radius: 9px;
+    cursor: pointer;
+    transition: all 0.25s ease-out;
+    user-select: none;
+}
+
+.like .heart-icon {
+    user-select: none;
+    transition: transform 0.25s ease-out;
+    /*scale: 2;*/
+    margin-right: 5px;
+}
+.like .heart-icon .fill-color-shape {
+    fill: transparent;
+}
+.like .heart-icon.isLiked {
+    filter: drop-shadow(0 3px 5px #c44133);
+}
+.like .heart-icon.isLiked .fill-color-shape {
+    transition: fill 0.5s linear;
+    fill: #e74c3c;
+}
+.like .heart-icon:hover {
+    transform: translate(0, calc(-20% - 3px)) scale(1.03);
+}
+.like .number-of-likes {
+    font-size: 20px;
+    user-select: none;
+    transform: translate(0, -3px);
+    color: #292d34;
+}
+
+.pc-name {
+    display: flex;
+}
+
+/*buttons*/
+
+
+.custom-btn {
+    width: 130px;
+    height: 40px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+    7px 7px 20px 0px rgba(0,0,0,.1),
+    4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+}
+
+.btn-orange {
+    background: linear-gradient(0deg, rgba(255,151,0,1) 0%, rgba(251,75,2,1) 100%);
+    line-height: 42px;
+    padding: 0;
+    border: none;
+}
+.btn-orange span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.btn-orange:before,
+.btn-orange:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    bottom: 0;
+    background: rgba(251,75,2,1);
+    box-shadow:
+            -7px -7px 20px 0px rgba(255,255,255,.9),
+            -4px -4px 5px 0px rgba(255,255,255,.9),
+            7px 7px 20px 0px rgba(0,0,0,.2),
+            4px 4px 5px 0px rgba(0,0,0,.3);
+    transition: all 0.3s ease;
+}
+.btn-orange:before{
+    height: 0%;
+    width: 2px;
+}
+.btn-orange:after {
+    width: 0%;
+    height: 2px;
+}
+.btn-orange:hover{
+    color: rgba(251,75,2,1);
+    background: transparent;
+}
+.btn-orange:hover:before {
+    height: 100%;
+}
+.btn-orange:hover:after {
+    width: 100%;
+}
+.btn-orange span:before,
+.btn-orange span:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    background: rgba(251,75,2,1);
+    box-shadow:
+            -7px -7px 20px 0px rgba(255,255,255,.9),
+            -4px -4px 5px 0px rgba(255,255,255,.9),
+            7px 7px 20px 0px rgba(0,0,0,.2),
+            4px 4px 5px 0px rgba(0,0,0,.3);
+    transition: all 0.3s ease;
+}
+.btn-orange span:before {
+    width: 2px;
+    height: 0%;
+}
+.btn-orange span:after {
+    height: 2px;
+    width: 0%;
+}
+.btn-orange span:hover:before {
+    height: 100%;
+}
+.btn-orange span:hover:after {
+    width: 100%;
+}
+
+.btn-yellow {
+    background: rgb(255,151,0);
+    border: none;
+    z-index: 1;
+}
+.btn-yellow:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 5px;
+    background-color: #eaf818;
+    background-image: linear-gradient(315deg, #eaf818 0%, #f6fc9c 74%);
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+    7px 7px 20px 0px rgba(0,0,0,.1),
+    4px 4px 5px 0px rgba(0,0,0,.1);
+    transition: all 0.3s ease;
+}
+.btn-yellow:hover {
+    color: #000;
+}
+.btn-yellow:hover:after {
+    top: auto;
+    bottom: 0;
+    height: 100%;
+}
+.btn-yellow:active {
+    top: 2px;
+}

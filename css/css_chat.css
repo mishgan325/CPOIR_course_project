@@ -1,0 +1,180 @@
+
+/* Стили для элемента чата */
+.chat {
+    z-index: 10;
+    font-family: Montserrat, sans-serif;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    max-height: 50px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transition: max-height 0.5s, width 0.3s;
+
+}
+
+.chat-toggle {
+    z-index: 10;
+    background-color: #007bff;
+    color: #fff;
+    padding: 13px;
+    cursor: pointer;
+    display: grid;
+    grid-template-columns: 40px auto;
+    height: 50px;
+}
+
+.chat-toggle h3 {
+    position: relative;
+    bottom: 15px;
+    opacity: 0;
+    transition: 2s;
+}
+
+#chat-box {
+    padding: 10px;
+    display: none;
+    overflow: auto;
+}
+
+.chat:hover {
+    max-height: 400px;
+    width: 300px;
+}
+
+.chat:hover h3 {
+    opacity: 1;
+}
+
+.chat:hover #chat-box {
+    display: block;
+}
+
+.chat:hover .message-input {
+    margin-bottom: 10px;
+    transition: 0.5s;
+}
+
+/* Иконка чата */
+.chat-toggle img {
+    max-width: 20px;
+    max-height: 20px;
+}
+
+/* Стили для сообщений в чате */
+.message {
+    float: left;
+    text-align: left;
+    background-color: #f0f0f0;
+    max-width: 70%;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px 0;
+    clear: both;
+    color: #000000;
+}
+
+.user-message {
+    float: right;
+    text-align: right;
+    background-color: #007bff;
+    max-width: 70%;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px 0;
+    clear: both;
+    color: white;
+}
+
+.message p, .user-message p {
+    margin: 0;
+    word-break: break-word;
+    hyphens: auto;
+}
+
+.loading {
+    font-weight: bold;
+    display:inline-block;
+    font-family: monospace;
+    font-size: 18px;
+    clip-path: inset(0 3ch 0 0);
+    animation: l 1s steps(4) infinite;
+}
+
+@keyframes l {
+    to {
+        clip-path: inset(0 -1ch 0 0)
+    }
+}
+
+/*плавная версия*/
+.shake-animation {
+    animation: shake 2s ease-in-out infinite;
+}
+
+@keyframes shake {
+    0%, 100% {
+        transform: translate(0, 0);
+    }
+    10%, 30%, 50%, 70%, 90% {
+        transform: translate(-5px, -5px);
+    }
+    20%, 40%, 60%, 80% {
+        transform: translate(5px, 5px);
+    }
+    50% {
+        animation-duration: 1s;
+    }
+}
+
+/*сумашедшая версия*/
+.bell-shake-animation {
+    animation: bellShake 0.5s ease-in-out infinite;
+}
+
+@keyframes bellShake {
+    0%, 100% {
+        transform: translate(0, 0);
+    }
+    10%, 30%, 50%, 70%, 90% {
+        transform: translate(-10px, -10px);
+    }
+    20%, 40%, 60%, 80% {
+        transform: translate(10px, 10px);
+    }
+    50% {
+        animation-duration: 1s;
+    }
+}
+
+.message-input {
+    position: relative;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 10px 0px 10px;
+}
+#text-input {
+    width: 69%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+input[type="button"] {
+    width: 29%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 13px;
+    box-sizing: border-box;
+    cursor: pointer;
+}

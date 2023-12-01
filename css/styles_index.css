@@ -1,0 +1,144 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+main a {
+    color: black;
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Open Sans', 'sans-serif';
+}
+
+article {
+    width: 83%;
+    display: flex;
+    flex-direction: column;
+    transition: .5s ease-in-out;
+}
+
+article h2 {
+    font-family: 'Open Sans', 'sans-serif';
+}
+
+/* Стили для секций */
+section {
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid #ccc;
+}
+
+/* Стили для правой боковой панели (aside) */
+
+aside h2 {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+aside {
+    width: 13%;
+    flex-direction: column;
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid #ccc;
+}
+
+/* Стили для блоков контекстной рекламы */
+.ad-block {
+    max-width: 255px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    text-align: center;
+
+}
+
+.ad-block img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.ad-block p {
+    margin: 0;
+    font-weight: bold;
+    color: #333;
+}
+.ad-block a {
+    color: #006eff;
+}
+
+.horizontal-scroll-wrapper {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 25%;
+    overflow-x: scroll;
+    border: 1px solid #ccc;
+}
+
+.horizontal-scroll-wrapper > div {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.horizontal-scroll-wrapper > div > img {
+    inline-size: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.float-image {
+    float: left;
+}
+
+@media (max-width: 1158px) {
+    main {
+        align-content: space-between;
+        display: block;
+    }
+    article {
+        width: 100%;
+    }
+    aside {
+        width: auto;
+    }
+    aside .ad-blocks-wrapper {
+        justify-content: space-around;
+        display: grid;
+        grid-auto-flow: column;
+        grid-auto-columns: 25%;
+        flex-wrap: wrap;
+        width: auto;
+        overflow: clip;
+    }
+}
+
+h5 {
+    font-weight: 500;
+    line-height: 1.7em;
+}
+
+h6 {
+    color: #666;
+    font-size: 14px;
+}
+
+h5, h6 {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font: inherit;
+    font-family: Montserrat, sans-serif;
+    vertical-align:baseline;
+}

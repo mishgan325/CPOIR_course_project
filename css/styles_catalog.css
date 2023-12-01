@@ -1,0 +1,48 @@
+/* Переменные */
+root
+{
+    --h3-text-size: calc(18*max-width/1920);
+    --text-size: calc(14*max-width/1920);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+main {
+    display: flex;
+}
+
+aside {
+    flex: 0 0 30%;
+    margin: 10px;
+}
+
+section {
+    flex: 1;
+    margin: 10px;
+}
+
+@media (max-width: 1200px) {
+    main {
+        flex-direction: column;
+    }
+    aside {
+        flex: 1;
+        align-content: center;
+    }
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}

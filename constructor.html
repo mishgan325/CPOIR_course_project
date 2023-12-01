@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Конструктор</title>
+
+    <link rel="stylesheet" href="css/css_header.css">
+    <link rel="stylesheet" href="css/styles_constructor.css">
+    <link rel="stylesheet" href="css/css_footer.css">
+    <link rel="stylesheet" href="css/css_scrollbar.css">
+    <link rel="stylesheet" href="css/css_chat.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,100&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+</head>
+<body>
+
+<header>
+    <a href="index.html">
+        <img src="images/LOGO_transparent.png" height="100px" width="auto">
+    </a>
+
+    <h1>Интерактивный конструктор ПК</h1>
+</header>
+<div class="menu">
+    <div class="menu-wrapper">
+        <img src="images/menu_burger.png" class="menu-icon">
+        <ul class="submenu">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="catalog.html">Каталог</a></li>
+            <li><a href="constructor.html">Конструктор</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+            <li><a href="cart.html">Корзина</a></li>
+        </ul>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="catalog.html">Каталог</a></li>
+            <li><a href="constructor.html">Конструктор</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+    </nav>
+    <div class="profile">
+        <a href="login.html">
+            <img src="images/user_orange.png" height="23px" width="auto" alt="">
+        </a>
+    </div>
+    <div class="cart">
+        <a href="cart.html">
+            <img src="images/cart_orange.png" height="25px" width="auto">
+        </a>
+        <div id="total-quantity" class="cart-quantity">0</div>
+        <div class="mini-shopping-cart">
+            <h2>Корзина</h2>
+
+            <!-- Товар #1 -->
+            <div class="item">
+
+                <button class="delete-button">
+                    <img src="images/delete.svg" alt="" />
+                </button>
+
+                <div class="image">
+                    <img src="images/gpu/gpu1.png" alt="gpu1"/>
+                </div>
+
+                <div class="description">
+                    <span>Cупер Видюха</span>
+                    <span>РТХ 6969</span>
+                    <span>Цвета нет</span>
+                </div>
+
+                <div class="quantity">
+                    <button class="plus-button">
+                        <img src="images/plus.svg" alt="" />
+                    </button>
+                    <input type="text" name="name" value="1">
+                    <button class="minus-button">
+                        <img src="images/minus.svg" alt="" />
+                    </button>
+                </div>
+                <div class="total-price">$549</div>
+            </div>
+        </div>
+    </div>
+</div>
+<main>
+    <section>
+        <div class="error-message">
+            <h2>Конструктор работает только в версии для ПК.</h2>
+        </div>
+        <div class="list-wrapper">
+            <div class="controls">
+                <button onclick="prevList()" id="left" class="arrow-button">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <h2 id="type">Процессоры</h2>
+                <button onclick="nextList()" id="right" class="arrow-button">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+            <div class="list">
+                <p>Что-то пошло не так</p>
+            </div>
+        </div>
+
+
+        <div class="constructor-wrapper">
+            <div class="container power-supply"><p>Power</p></div>
+            <div class="container cooler"><p>cooler</p></div>
+            <div class="container ssd"><p>SSD</p></div>
+            <div class="container hdd"><p>HDD</p></div>
+            <div class="container motherboard">
+                <div class="container cpu"><p>CPU</p></div>
+                <div class="container gpu"><p>GPU</p></div>
+                <div class="container ram"><p>RAM</p></div>
+            </div>
+        </div>
+    </section>
+    <div class="finals">
+        <h2>Выбрали все комплектующие? Тогда добавьте их в корзину <button onclick="addPCtoCart()" class="custom-btn btn-orange"><span>Добавить в корзину</span></button></h2>
+    </div>
+</main>
+
+<div class="chat">
+    <div class="chat-toggle">
+        <img src="images/chat.png" alt="Иконка чата" class="shake-animation">
+        <h3>Чат с консультантом</h3>
+    </div>
+    <div id="chat-box">
+        <div class="message">
+            <p>Привет, чем могу помочь?</p>
+        </div>
+        <div class="message">
+            <p>У вас есть какие-либо вопросы по продуктам?</p>
+        </div>
+    </div>
+    <div class="message-input">
+        <input type="text" id="text-input" placeholder="Ваше сообщение">
+        <input type="button" id="send-message-button" value="Отправить">
+    </div>
+</div>
+<footer>
+    <div class="footer-columns">
+        <div class="column col-1">
+            <img src="images/LOGO_transparent.png" alt="logo.png" id="footer-logo">
+            <ul>
+                <li>
+                    <p class="tel-text"><i class="fas fa-phone-alt phone-icon"></i>бесплатный по России</p>
+                    <a class="tel-number" href="tel:88005553535">8(800)555-35-35</a>
+                </li>
+                <li><i class="far fa-envelope"></i><a href="mailto:test@test.test">shibut.m.v@edu.mirea.ru</a></li>
+                <li><i class="fas fa-map-marker-alt"></i>Проспект Вернадского, 78, Москва</li>
+            </ul>
+            <div class="social-icons">
+                <a class="github" href="#"><i class="fa-brands fa-github"></i></a>
+                <a class="telegram" href="#"><i class="fa-brands fa-telegram"></i></a>
+                <a class="codepen" href="#"><i class="fa-brands fa-codepen"></i></a>
+                <a class="vk"><i class='fa fa-vk'></i></a>
+            </div>
+        </div>
+        <div class="column col-2">
+            <h2>DNS RELOADED EXTENDED</h2>
+            <ul class="footer-links">
+                <li><a>О компании</a></li>
+                <li><a>Отзывы</a></li>
+                <li><a>Контакты</a></li>
+                <li><a>Салоны</a></li>
+                <li><a>Услуги</a></li>
+                <li><a>Портфолио</a></li>
+                <li><a>Новости</a></li>
+                <li><a>Обзоры и статьи</a></li>
+                <li><a>Форум</a></li>
+                <li><a>FAQ</a></li>
+
+            </ul>
+        </div>
+
+        <div class="column col-3">
+            <h2>НАВИГАЦИЯ</h2>
+            <ul class="footer-links">
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Каталог</a></li>
+                <li><a href="#">Конструктор</a></li>
+                <li><a href="#">Контакты</a></li>
+
+            </ul>
+        </div>
+
+        <div class="column col-4">
+            <h2>КАТАЛОГ</h2>
+            <ul class="footer-links">
+                <li><a href="#">Процессоры</a></li>
+                <li><a href="#">Видеокарты</a></li>
+                <li><a href="#">Материнские платы</a></li>
+                <li><a href="#">Оперативная память</a></li>
+                <li><a href="#">Жесткие диски</a></li>
+                <li><a href="#">Блоки питания</a></li>
+                <li><a href="#">Корпуса</a></li>
+                <li><a href="#">Охлаждение</a></li>
+                <li><a href="#">Аксессуары</a></li>
+                <li><a href="catalog.html">Готовые пк</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-line"></div>
+    <div class="copyright">
+        <p>&copy; 2023 Магазин компьютерных комплектующих. Все права защищены.</p>
+    </div>
+</footer>
+<script src="js/script_constructor.js"></script>
+<script src="js/js_chat.js"></script>
+</body>
+</html>
