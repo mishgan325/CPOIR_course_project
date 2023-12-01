@@ -116,11 +116,15 @@ aside {
         justify-content: space-around;
         display: grid;
         grid-auto-flow: column;
-        grid-auto-columns: 25%;
         flex-wrap: wrap;
         width: auto;
         overflow: clip;
     }
+
+    .ad-block img {
+        width: 200px;
+    }
+
 }
 
 h5 {
