@@ -15,7 +15,7 @@ window.addEventListener('resize', function() {
 function checkWindowSize() {
     var windowWidth = window.innerWidth;
 
-    if (windowWidth < 1000) {
+    if (windowWidth < 300) {
         document.querySelector("main .list-wrapper").style.display = 'none';
         document.querySelector("main .constructor-wrapper").style.display = 'none';
         document.querySelector("main .error-message").style.display = 'flex';
