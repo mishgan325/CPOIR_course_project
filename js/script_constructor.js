@@ -31,22 +31,28 @@ function checkWindowSize() {
 }
 
 
-let CPUs = [{id: 'cpu1', src: 'images/cpu/cpu3.png', alt: 'image'},
-    {id: 'cpu2', src: 'images/cpu/cpu4.png', alt: 'image'}];
+let CPUs = [{id: 'cpu1', src: 'images/cpu/cpu1.png', alt: 'image'},
+    {id: 'cpu2', src: 'images/cpu/cpu2.png', alt: 'image'}];
 let GPUs = [{id: 'gpu1', src: 'images/gpu/gpu1.png', alt: 'image'},
     {id: 'gpu2', src: 'images/gpu/gpu2.png', alt: 'image'}];
 let HDDs = [{id: 'hdd1', src: 'images/hdd/hdd1.png', alt: 'image'},
-    {id: 'hdd2', src: 'images/hdd/hdd2.png', alt: 'image'}]
+    {id: 'hdd2', src: 'images/hdd/hdd2.png', alt: 'image'},
+    {id: 'hdd3', src: 'images/hdd/hdd3.png', alt: 'image'},
+    {id: 'hdd4', src: 'images/hdd/hdd4.png', alt: 'image'}]
 let SSDs = [{id: 'ssd1', src: 'images/ssd/ssd1.png', alt: 'image'},
-    {id: 'ssd2', src: 'images/ssd/ssd2.png', alt: 'image'}]
+    {id: 'ssd2', src: 'images/ssd/ssd2.png', alt: 'image'},
+    {id: 'ssd3', src: 'images/ssd/ssd3.png', alt: 'image'},
+    {id: 'ssd4', src: 'images/ssd/ssd4.png', alt: 'image'}]
 let PSUs = [{id: 'power1', src: 'images/power/power1.png', alt: 'image'},
-    {id: 'power2', src: 'images/power/power3.png', alt: 'image'}]
+    {id: 'power2', src: 'images/power/power2.png', alt: 'image'},
+    {id: 'power3', src: 'images/power/power3.png', alt: 'image'}]
 let Coolers = [{id: 'cooler1', src: 'images/cooler/cooler1.png', alt: 'image'},
     {id: 'cooler2', src: 'images/cooler/cooler2.png', alt: 'image'},
     {id: 'cooler3', src: 'images/cooler/cooler3.png', alt: 'image'}]
 let RAMs = [{id: 'ram1', src: 'images/ram/ram1.png', alt: 'image'},
     {id: 'ram2', src: 'images/ram/ram2.png', alt: 'image'},
-    {id: 'ram3', src: 'images/ram/ram3.png', alt: 'image'}]
+    {id: 'ram3', src: 'images/ram/ram3.png', alt: 'image'},
+    {id: 'ram4', src: 'images/ram/ram4.png', alt: 'image'}]
 
 
 let finalList = [];
