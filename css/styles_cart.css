@@ -103,33 +103,6 @@ button[type="submit"]:hover {
     font-size: 16px;
 }
 
-/* Стили для подвала */
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-}
-
-
-/* Настройки скролбара*/
-::-webkit-scrollbar {
-    width: 5px;
-    height: 5px;
-    background-color: rgba(255,255,255, 0);
-    -webkit-border-radius: 100px;
-}
-
-::-webkit-scrollbar-thumb {
-    background: #aaaaaa;
-    -webkit-border-radius: 100px;
-}
-
-::-webkit-scrollbar-thumb:hover,
-::-webkit-scrollbar-thumb:active  {
-    background: #777777;
-}
-
 /* Корзина */
 
 .shopping-cart h2 {
